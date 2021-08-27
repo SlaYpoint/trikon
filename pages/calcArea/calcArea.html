@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trikone | Area</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <main class="container">
+        <a href="/index.html" class="turn-btn">
+            <img src="/assets/arrow_back.svg" alt="">
+            Return To Home
+        </a>
+        <h1>calculate <span class="text-focus">Area</span></h1>
+        <h3>How do you want to calculate the areas ?</h3>
+        
+        <!-- Input -->
+        <form id="selectionForm">
+            <div class="radio">
+                <label for="calcArea1">
+                    <input type="radio" name="areaOption" id="calcArea1">
+                    I have base and height
+                </label>
+            </div>
+            <div class="radio">
+                <label for="calcArea2">
+                    <input type="radio" name="areaOption" id="calcArea2">
+                    I have lengths of 3 sides
+                </label>
+            </div>
+        </form>
+
+        <!-- Calculation -->
+        <div class="areaCalc">
+            <form class="areaCalce__form">
+                <input class="input" id="input1" type="text" placeholder="base" required>
+                <input class="input" id="input2" type="text" placeholder="height" required>
+                <button class="btn" class="btn" id="submit">Find</button>
+            </form>
+            <h3>Area will be</h3>
+            <div class="output">
+                <label for="result">
+                    Area = 
+                    <p id="result"></p>
+                </label>  
+            </div>
+        </div>
+
+        <div class="areaCalc">
+            <form class="areaCalce__form">
+                <input class="input" id="input1" type="text" placeholder="side 1" required>
+                <input class="input" id="input2" type="text" placeholder="side 2" required>
+                <input class="input" id="input3" type="text" placeholder="side 3" required>
+                <button class="btn" id="submit">Find</button>
+            </form>
+            <h3>Area will be</h3>
+            <div class="error">
+                Given sides do not form a triangle. Enter valid lengths.
+            </div>
+            <div class="output">
+                <label for="result">
+                    Area = 
+                    <p id="result"></p>
+                </label>  
+            </div>
+        </div>
+    </main>
+    <script src="area.js"></script>
+</body>
+</html>

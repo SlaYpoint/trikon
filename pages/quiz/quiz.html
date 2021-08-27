@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trikone | Quiz</title>
+    <link rel="stylesheet" type="text/css" href="../../styles.css">
+</head>
+<body>
+    <main class="container">
+        <a href="/index.html" class="turn-btn">
+                <img src="/assets/arrow_back.svg" alt="">
+                Return To Home
+        </a>
+        <h1>trikone<span class="text-focus"> Quiz</span></h1>
+        
+        <form class="quizForm">
+            <div class="radio">
+                <label class="label question">
+                    1. A triangle with one angle greater than 90<sup>0</sup>.
+                </label>
+
+                <label for="radio1" class="label">
+                    <input type="radio" id="radio1" name="ques1" value="opt1" required>
+                    Acute
+                </label>
+                <label for="radio2" class="label">
+                    <input type="radio" id="radio2" name="ques1" value="opt2" required>
+                    Obtuse
+                </label>
+                <label for="radio3" class="label">
+                    <input type="radio" id="radio3" name="ques1" value="opt3" required>
+                    Right Angle
+                </label>
+            </div>
+
+            <div class="radio">
+                <label class="label question">
+                    2. A triangle with angles 60<sup>0</sup>, 60<sup>0</sup>, 60<sup>0</sup>. 
+                    Is it an equilateral triangle ?
+                </label>
+
+                <label for="radio4" class="label">
+                    <input type="radio" id="radio4" name="ques2" value="opt1" required>
+                    Yes
+                </label>
+                <label for="radio5" class="label">
+                    <input type="radio" id="radio5" name="ques2" value="opt2" required>
+                    No
+                </label>
+            </div>
+
+            <div class="radio">
+                <label class="label question">
+                    3. Two of the the three angles in a traingle are 40<sup>0</sup>
+                    and 70<sup>0</sup>. What is this triangle called?
+                </label>
+
+                <label for="radio6" class="label">
+                    <input type="radio" id="radio6" name="ques3" value="opt1" required>
+                    Acute
+                </label>
+                <label for="radio7" class="label">
+                    <input type="radio" id="radio7" name="ques3" value="opt2" required>
+                    Obtuse
+                </label>
+                <label for="radio8" class="label">
+                    <input type="radio" id="radio8" name="ques3" value="opt3" required>
+                    Isosceles
+                </label>
+            </div>
+
+            <div class="radio">
+                <label class="label question">
+                    4. If a triangle has 2 angles of 75<sup>0</sup>.
+                    What is the measure of third angle in degree?
+                </label>
+
+                <label for="radio9" class="label">
+                    <input type="radio" id="radio9" name="ques4" value="opt1" required>
+                    25<sup>0</sup>
+                </label>
+                <label for="radio10" class="label">
+                    <input type="radio" id="radio10" name="ques4" value="opt2" required>
+                    30<sup>0</sup>
+                </label>
+                <label for="radio11" class="label">
+                    <input type="radio" id="radio11" name="ques4" value="opt3" required>
+                    15<sup>0</sup>
+                </label>
+            </div>
+
+            <div class="radio">
+                <label class="label question">
+                    5. If a triangle has angles 90<sup>0</sup>, 60<sup>0</sup> and 30
+                    <sup>0</sup>. Is it a right angle triangle? 
+                </label>
+
+                <label for="radio12" class="label">
+                    <input type="radio" id="radio12" name="ques5" value="opt1" required>
+                    Yes
+                </label>
+                <label for="radio13" class="label">
+                    <input type="radio" id="radio13" name="ques5" value="opt2" required>
+                    No
+                </label>
+            </div>
+
+            <div class="radio">
+                <label class="label question">
+                    6. Is it possible to draw a triangle with sides of lengths
+                    2 cm, 3 cm and 4 cm? 
+                </label>
+
+                <label for="radio14" class="label">
+                    <input type="radio" id="radio14" name="ques6" value="opt1" required>
+                    Yes
+                </label>
+                <label for="radio15" class="label">
+                    <input type="radio" id="radio15" name="ques6" value="opt2" required>
+                    No
+                </label>
+            </div>
+            <button class="btn" id="submit">Submit</button>
+        </form>
+
+        <h3>Your score is</h3>
+        <div class="output">
+            <label for="result">
+                <p id="result">You get 1 point for each right answer</p>
+            </label>  
+        </div>
+    </main>
+    <script src="quiz.js"></script>
+</body>
+</html>
