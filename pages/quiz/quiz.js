@@ -15,7 +15,7 @@ form.addEventListener('submit', (e) => {
     for (let inp of formData) {
         if (inp[1] === rightAns[idx]) {
             quesDivs[idx].style.background = '#A7F3D0';
-            score++;
+            score+=2;
         } else {
             quesDivs[idx].style.background = "#FCA5A5";
         }
@@ -23,5 +23,6 @@ form.addEventListener('submit', (e) => {
     }
 
     submitBtn.style.display = "none";
-    output.innerText = score;
+    output.innerText = `Your Score is ${score}`;
+    output.style.backgroundColor = "#FEF3C7";
 });

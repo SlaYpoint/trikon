@@ -1,6 +1,7 @@
 const form = document.getElementById("anglesTriangle");
 const angles = document.querySelectorAll(".input");
 const output = document.getElementById("result");
+const err = document.querySelector(".error");
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -11,10 +12,13 @@ form.addEventListener('submit', (e) => {
         sum += Number(angle.value);
     });
 
-    if (sum === 180)
+    if (sum === 180) {
         output.innerText = "They make an traingle!";
-    else
-        output.innerText = "Oh no! these angles dont make a traingle.";
+        output.style.background = "#A7F3D0";
+    }
+    else {
+        err.style.display = "block";
+    }
 });
 
 
