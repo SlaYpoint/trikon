@@ -37,6 +37,7 @@ forms[2].addEventListener('submit', (e) => {
     if (a + b > c && b + c > a && c + a > b) {
       const s = (a + b + c) / 2;
       output[1].innerText = Math.sqrt(s * (s - a) * (s - b) * (s - c)).toFixed(2);
+      outputDiv[1].style.display = "block";
     } else {
         err.style.display = "block";
         outputDiv[1].style.display = "none";
