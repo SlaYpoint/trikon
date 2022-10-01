@@ -150,6 +150,8 @@ ul{
 
 #result{
     padding: 1rem;
+    font-size: x-large;
+    font-weight: 800;
 }
 
 .error{
